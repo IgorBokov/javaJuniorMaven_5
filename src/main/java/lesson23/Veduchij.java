@@ -9,11 +9,10 @@ public class Veduchij {
         thread.start();
         boolean konec = true;
         while (konec){
-            if(!thread.isAlive()){
+            if(!voce1.isAlive()){
                 konec = false;
             }
         }
         System.out.println("конец");
-
     }
 }
