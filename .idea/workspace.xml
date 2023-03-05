@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f26cf1d8-6323-4b0c-bee5-171eb800431d" name="Changes" comment="Ok">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson24/ParametrizeClass.java" afterDir="false" />
+    <list default="true" id="f26cf1d8-6323-4b0c-bee5-171eb800431d" name="Changes" comment="04.03.23">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson23/Streptiz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson23/Kloun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson23/Kloun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson23/Monitors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson23/Monitors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lesson23/Veduchij.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson23/Veduchij.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lesson23/Voce1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson23/Voce1.java" afterDir="false" />
     </list>
@@ -36,6 +38,18 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9afd68da-7176-4824-828e-ebc019c848fd" />
+        <option name="url" value="https://github.com/IgorBokov/javaJuniorMaven_5.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -129,7 +143,9 @@
       <workItem from="1677528584962" duration="573000" />
       <workItem from="1677614535897" duration="386000" />
       <workItem from="1677772926693" duration="2750000" />
-      <workItem from="1677944158416" duration="1612000" />
+      <workItem from="1677944158416" duration="1761000" />
+      <workItem from="1677946241082" duration="10288000" />
+      <workItem from="1678026976862" duration="2222000" />
     </task>
     <task id="LOCAL-00001" summary="Ok">
       <created>1677528793456</created>
@@ -145,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677614714272</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="04.03.23">
+      <created>1677946027945</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677946027945</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +188,34 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ok" />
+    <MESSAGE value="04.03.23" />
+    <option name="LAST_COMMIT_MESSAGE" value="04.03.23" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lesson23/Veduchij.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lesson23/Kloun.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lesson23/Streptiz.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/lesson23/Voce1.java</url>
+          <line>3</line>
+          <properties field="count" class="lesson23.Voce1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
