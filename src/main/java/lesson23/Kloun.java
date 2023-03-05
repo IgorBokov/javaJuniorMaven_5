@@ -4,10 +4,17 @@ public class Kloun implements Runnable {
     private int count = 0;
 
     @Override
+    public String toString() {
+        return "Kloun{" +
+                "count=" + count +
+                '}';
+    }
+
+    @Override
     public void run() {
         Thread.currentThread().setName("LOG kloun");
         System.out.println(Thread.currentThread().getName());
-        while (count < 4) {
+        while (true) {
             synchronized (Monitors.SHAR) {
                 try {
                     Monitors.SHAR.wait();
@@ -27,5 +34,6 @@ public class Kloun implements Runnable {
                 Monitors.FLAG.notify();
             }
         }
+
     }
 }
