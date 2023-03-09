@@ -8,6 +8,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.ZonedDateTime;
+import java.util.ArrayList;
 
 public class UserService {
     public User getRandomUser() throws IOException, InterruptedException {
@@ -18,7 +19,24 @@ public class UserService {
                 .build();
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         return parseJsonResponceToUser(response.body());
+    }
 
+    public ArrayList<User> getRandomUserses(int r) {
+        ArrayList<User> users = new ArrayList<>();
+        UserService service = new UserService();
+        try {
+            for (int i = 0; i < r; i++) {
+                users.add(service.getRandomUser()); //составляем список из r пользователей
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return users;
+    }
+
+    public ArrayList<User> getRandomUserCountry(int i, String country) {
+
+        return null;
     }
 
     public User parseJsonResponceToUser(String data) {

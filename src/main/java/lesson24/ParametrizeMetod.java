@@ -19,4 +19,5 @@ public class ParametrizeMetod {
         }
         return t;
     }
+
 }
