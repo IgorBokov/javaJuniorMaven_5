@@ -22,9 +22,9 @@ public class UserService {
     }
 
     public User parseJsonResponceToUser(String data) {
-        JSONObject fullDataUser = new JSONObject(data).getJSONArray("results").getJSONObject(0);
+        JSONObject fullDataUser = new JSONObject(data).getJSONArray("results").getJSONObject(0);//получили все данные поля "results"
         User user = new User();
-        user.setGender(fullDataUser.getString("gender"));
+        user.setGender(fullDataUser.getString("gender")); //сохранили пол нашего usera
         JSONObject name = fullDataUser.getJSONObject("name");
         user.setFirsName(name.getString("first"));
         user.setLastsName(name.getString("last"));

@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f26cf1d8-6323-4b0c-bee5-171eb800431d" name="Changes" comment="06.03.23">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson25/LambdaExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson25/Mail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson25/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson25/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson25/LambdaExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson25/LambdaExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson25/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson25/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson25/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson25/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,23 +69,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/bokov/idea/kazan5/javaJuniorMaven_5&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.11407544&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/bokov/idea/kazan5/javaJuniorMaven_5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.11407544",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.LambdaExample">
     <configuration name="LambdaExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson25.LambdaExample" />
@@ -101,8 +101,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Mail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson25.Mail" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson25.Main" />
       <module name="javaJuniorMaven_5" />
       <extension name="coverage">
         <pattern>
@@ -156,7 +156,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.LambdaExample" />
-        <item itemvalue="Application.Mail" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ParametrizeClass" />
         <item itemvalue="Application.Veduchij" />
         <item itemvalue="Application.lesson23.Main" />
@@ -181,7 +181,8 @@
       <workItem from="1677946241082" duration="10288000" />
       <workItem from="1678026976862" duration="9190000" />
       <workItem from="1678116397341" duration="7566000" />
-      <workItem from="1678128790154" duration="593000" />
+      <workItem from="1678128790154" duration="700000" />
+      <workItem from="1678289653534" duration="5360000" />
     </task>
     <task id="LOCAL-00001" summary="Ok">
       <created>1677528793456</created>
@@ -218,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678039979948</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="06.03.23">
+      <created>1678129507260</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678129507262</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +279,15 @@
           <line>3</line>
           <properties field="count" class="lesson23.Voce1" />
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/lesson25/LambdaExample.java</url>
+          <line>5</line>
+          <properties class="lesson25.LambdaExample" method="filtre">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
