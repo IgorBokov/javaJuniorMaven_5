@@ -34,9 +34,19 @@ public class UserService {
         return users;
     }
 
-    public ArrayList<User> getRandomUserCountry(int i, String country) {
-
-        return null;
+    public ArrayList<User> getRandomUserCountry(int i, String country) throws IOException, InterruptedException {
+        ArrayList<User> res = new ArrayList<>();
+        boolean ok = true;
+        while (ok) {
+            User randomUser = getRandomUser();
+            if (randomUser.getCountry().equals(country)) {
+                res.add(randomUser);
+            }
+            if (res.size() >= i) {
+                ok = false;
+            }
+        }
+        return res;
     }
 
     public User parseJsonResponceToUser(String data) {
