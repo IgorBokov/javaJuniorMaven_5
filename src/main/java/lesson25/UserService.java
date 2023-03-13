@@ -9,6 +9,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
+import java.util.List;
 
 public class UserService {
     public User getRandomUser() throws IOException, InterruptedException {
@@ -48,6 +49,15 @@ public class UserService {
         }
         return res;
     }
+    public List<User> getUsers(int count) throws IOException, InterruptedException {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder()
+                .GET()
+                .uri(URI.create(String.format("https://randomuser.me/api?results=%d",count)))
+                .build();
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        return parseJsonResponceToUsers(response.body());
+    }
 
     public User parseJsonResponceToUser(String data) {
         JSONObject fullDataUser = new JSONObject(data).getJSONArray("results").getJSONObject(0);//получили все данные поля "results"
@@ -65,4 +75,27 @@ public class UserService {
         user.setCountry(location.getString("country"));
         return user;
     }
+    public List<User> parseJsonResponceToUsers(String data) {
+        List<User> res = new ArrayList<>();
+        int count = new JSONObject(data)
+                .getJSONObject("info")
+                .getInt("results");
+        for(int i = 0; i< count; i++){
+            JSONObject fullDataUser = new JSONObject(data).getJSONArray("results").getJSONObject(i);//получили все данные поля "results"
+            User user = new User();
+            user.setGender(fullDataUser.getString("gender")); //сохранили пол нашего usera
+            JSONObject name = fullDataUser.getJSONObject("name");
+            user.setFirsName(name.getString("first"));
+            user.setLastsName(name.getString("last"));
+            user.setEmail(fullDataUser.getString("email"));
+            JSONObject dob = fullDataUser.getJSONObject("dob");
+            ZonedDateTime zona = ZonedDateTime.parse(dob.getString("date"));
+            user.setDob(zona.toLocalDate());
+            user.setPhone(fullDataUser.getString("phone"));
+            JSONObject location = fullDataUser.getJSONObject("location");
+            user.setCountry(location.getString("country"));
+            res.add(user);
+        }
+        return res;
+        }
 }
